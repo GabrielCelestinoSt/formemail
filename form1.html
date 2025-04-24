@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action - recebe o endereço do arquivo ou uma página para onde os dados serão enviado -->
+    <!-- method - determina como os dados serão enviados -->
+    <form action="#" method="post" >
+
+        <h1 style="font-weight: bold;">FORMULÁRIO DE CONTATO</h1>
+
+        <!-- maxlength delimita a quantidade de caracteres (modelagem db) -->
+         
+        <label for="name">Nome</label>
+        <input type="text" name="nome" id="name" placeholder="Nome e Sobrenome" maxlength="30" required autofocus>
+        <br><br>
+
+        <!-- autocomplete - quando o usuário preenche o campo e envia o formulário, 
+        os dados ficam salvos; assim quando ele queira redigitar novamente não irá 
+        precisar redigitar todos os dados -->
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" maxlength="50" placeholder="seu.email@email.com" autocomplete>
+        <br><br>
+
+        <label for="tel">Telefone</label>
+        <input type="tel" name="tel" id="tel" maxlength="11" placeholder="EX:(99)99999-9999" autocomplete="on">
+        <br><br>
+
+
+        <!-- curriculo -->
+         <div class="curriculo">
+            <div class="texto">
+                <label for="curriculum">Anexe seu currículo:</label>
+            </div>
+            <input type="file" name="curriculum" id="curriculum">
+         </div>
+         
+         <br><br>
+
+        <div class="mensagem">
+
+            <div class="texto">
+                <label for="mensagem">Mensagem</label>
+            </div>
+
+            <textarea name="message" id="mensagem" rows="5" cols="20" style="resize: none;" maxlength="200" placeholder="Digite aqui a sua mensagem" required></textarea>
+
+        </div>
+        
+        
+
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>

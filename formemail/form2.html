@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="background-color: brown;">
+    <!-- action - recebe o endereço do arquivo ou uma página para onde os dados serão enviado -->
+    <!-- method - determina como os dados serão enviados -->
+    <form action="https://formsubmit.co/gabriel.c.santos34@aluno.senai.br" method="POST" >
+
+        <h1 style="font-weight: bold; color: aliceblue;">FORMULÁRIO PARA CONTATO</h1>
+
+        <!-- maxlength delimita a quantidade de caracteres (modelagem db) -->
+         
+        <label for="name" style="color: aliceblue;">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Nome e Sobrenome" maxlength="30" required autofocus>
+        <br><br>
+
+        <!-- autocomplete - quando o usuário preenche o campo e envia o formulário, 
+        os dados ficam salvos; assim quando ele queira redigitar novamente não irá 
+        precisar redigitar todos os dados -->
+        <label for="email" style="color: aliceblue;">E-mail</label>
+        <input type="email" name="email" id="email" maxlength="50" placeholder="seu.email@email.com" autocomplete>
+        <br><br>
+
+        <label for="tel" style="color: aliceblue;">Telefone</label>
+        <input type="tel" name="tel" id="tel" maxlength="11" placeholder="EX:(99)99999-9999" autocomplete="off">
+        <br><br>
+
+
+        <!-- curriculo -->
+         <div class="curriculo">
+            <div class="texto">
+                <label for="curriculum" style="color: aliceblue;">Anexe seu currículo:</label>
+            </div>
+            <input type="file" name="curriculum" id="curriculum">
+         </div>
+         
+         <br><br>
+
+        <div class="mensagem">
+
+            <div class="texto">
+                <label for="mensagem" style="color: aliceblue;">Mensagem</label>
+            </div>
+
+            <textarea name="message" id="mensagem" rows="5" cols="20" style="resize: none;" maxlength="200" placeholder="Digite aqui a sua mensagem" required></textarea>
+
+        </div>
+        
+        
+        <input type="submit" id="submit">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/formemail/form3.html">
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
